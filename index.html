@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <div class="main-section">
+        <div class="input-section">
+            <input type="text" placeholder="Search City." class="cityInput">
+            <button id="searchBtn">
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+            </button>
+        </div>
+        
+        <div class="totalInfo" style="display:none">
+        <section class="weather-section">
+            <div class="locationNameContainer">
+                <span class="material-symbols-outlined">
+                    location_on
+                    </span>
+                    <h4 class="location-name">Mysuru</h4>
+            </div>
+            <h5 class="dateAndTime">Wed, 22 Aug</h5>
+
+        </section>
+
+        
+        <div class="weather-summary-container">
+            <img src="/assets/assets/weather/clouds.svg" alt="" srcset="" class="weatherSummaryPic">
+            <div class="weather-summary-info">
+                <h1 class="tempText" >29 °C</h1>
+                <h4 class="cloudText">Clouds</h4>
+            </div>
+        </div>
+
+
+        <div class="condition-summary-container">
+            <div class="cond-info">
+                <span class="material-symbols-outlined">
+                    water_drop
+                    </span>
+                    <div class="humiValues">
+                        <h5 class="humiText">Humidity</h5>
+                    <h5 class="humiValue">55%</h5>
+                    </div>
+                
+            </div>
+
+            <div class="cond-info">
+                <span class="material-symbols-outlined">
+                    air
+                    </span>
+                    <div class="humiValues">
+                        <h5 class="windText">Wind Speed</h5>
+                        <h5 class="windValue">2 m/s</h5>
+                    </div>
+                </div>
+        </div>
+
+
+    <div class="forecast-container">
+
+        <div class="forecast-items">
+            <h5 class="forecast-date ">23 Aug</h5>
+            <img src="/assets/assets/weather/rain.svg" >
+            <h5 class="forecast-temp">29 °C</h5>
+        </div>
+
+        <div class="forecast-items">
+            <h5 class="forecast-date ">23 Aug</h5>
+            <img src="/assets/assets/weather/rain.svg" >
+            <h5 class="forecast-temp">29 °C</h5>
+        </div>
+         
+        <div class="forecast-items">
+            <h5 class="forecast-date ">23 Aug</h5>
+            <img src="/assets/assets/weather/rain.svg" >
+            <h5 class="forecast-temp">29 °C</h5>
+        </div>
+
+        <div class="forecast-items">
+            <h5 class="forecast-date ">23 Aug</h5>
+            <img src="/assets/assets/weather/rain.svg" >
+            <h5 class="forecast-temp">29 °C</h5>
+        </div>
+
+        <div class="forecast-items">
+            <h5 class="forecast-date ">23 Aug</h5>
+            <img src="/assets/assets/weather/rain.svg" >
+            <h5 class="forecast-temp">29 °C</h5>
+        </div>
+    </div>
+
+</div>
+
+<!-- 
+search section -->
+<section class="search-city-container">
+    <img src="/assets/assets/message/search-city.png" alt="" srcset="">
+    <h1 class="searchCityText">Search City</h1>
+    <h4 class="searchCityPara">
+        Search Your city name to know the weather conditions and forecasts
+    </h4>
+</section>
+
+
+<!-- not found page -->
+<section class="not-found-container " style="display:none">
+    <img src="/assets/assets/message/not-found.png" alt="" srcset="">
+    <h1 class="errorText">Page not found</h1>
+    <h4 class="errorPara">
+       Something went wrong, there was an error fetching your page. Please try again later
+    </h4>
+</section>
+
+
+    </div>
+    
+    <script src="/script.js"></script>
+</body>
+</html>

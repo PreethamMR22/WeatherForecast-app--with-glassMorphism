@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background:url("/assets/assets/bg.jpg");
+    width:100%;
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;   
+    backdrop-filter: blur(15px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-section{
+    color:white;
+    height:32rem;
+    width:20rem;
+       border-radius:10px;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.341) 2px 2px 10px;
+    background:linear-gradient(to top,rgba(255, 255, 255, 0.152),rgba(0, 0, 0, 0.319))
+}
+.input-section{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    &:hover {
+        margin-top:0.5rem;
+        transition:0.6s;
+    }
+    margin-bottom:2rem;
+}
+.cityInput {
+    height:3rem;
+    width:80%;
+    margin-top:1rem;
+    background-color: rgba(61, 61, 61, 0.132);
+    border:none;
+    border-radius:2rem;
+    padding:20px;
+    margin-left:1.45rem;
+    transition:1s border;
+    outline:none;
+    color:white;
+    &:hover {
+        width:90%;
+        transition:1s;
+       
+    }
+}
+.cityInput:focus {
+border:1px solid rgba(0, 0, 0, 0.16);
+}
+.cityInput::placeholder {
+    color:rgba(255, 255, 255, 0.756);
+    font-family: "poppins";
+  
+}
+#searchBtn {
+    background:transparent;
+    border:white;
+    filter:invert();
+    z-index:2;
+    position:relative;
+    left:-2rem;
+    top:0.6rem;
+}
+.weather-section {
+    display:flex;
+    justify-content:space-between;
+    width:90%;
+    margin-left:1rem;
+}
+.locationNameContainer {
+    display:flex;
+    gap:0.2rem;
+}
+.dateAndTime {
+    font-weight: 500;
+    padding:3px;
+}
+.weather-summary-container{
+    margin-top:1.5rem;
+    display: flex;
+  
+    justify-content: space-around;
+}
+.weather-summary-info {
+    margin-top:1rem;
+}
+.weather-summary-container img {
+    height:7rem;
+}
+.tempText {
+    font-weight: 600;
+}
+.cloudText {
+    font-weight: 400;
+}
+.condition-summary-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top:1rem;
+    margin-left:1rem;
+    margin-right:1rem;
+}
+.cond-info {
+    display: flex;
+    gap:0.4rem;
+}
+.cond-info span {
+    font-size:30px;
+}
+.windText {
+    font-weight: 300;
+}
+.humiText {
+    font-weight: 300;
+}
+
+.forecast-container {
+    margin-top:2rem;
+    display: flex;
+    gap:1rem;
+    margin-left:1rem; 
+    overflow-x: scroll;
+    padding:10px;
+    margin-right:1rem;
+}
+
+.forecast-container::-webkit-scrollbar {
+    height: 8px;
+}
+.forecast-container::-webkit-scrollbar-track {
+
+    background-color: rgba(0, 0, 0, 0.107);
+    border-radius: 100px;
+}
+.forecast-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.14);
+    border-radius: 99px;
+}
+.forecast-items img {
+   height: 3rem;
+}
+.forecast-items {
+    background-color:rgba(255, 255, 255, 0.151);
+    padding:10px;
+
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.342);
+        transition:0.3s background;
+    }
+}
+.forecast-date {
+    font-weight:300;
+}
+
+/* 
+//search section */
+.search-city-container {
+    margin-left:1.5rem;
+    margin-right:1rem;
+    width:100%;
+    display:flex;
+    margin-top:2rem;
+    justify-content: center;
+    flex-direction: column;
+}
+.search-city-container img {
+    width:15rem;
+    margin-bottom:1rem;
+}
+.searchCityPara {
+    font-weight: 400;
+    font-size:0.8rem;
+}
+.searchCityText {
+    font-family: "poppins";
+}
+
+/*error page */
+.not-found-container {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:rem;
+}
+.not-found-container img {
+ width:15rem;
+}
+.errorText {
+    font-family: "poppins";
+    margin-top: 2rem;
+}
+.errorPara {
+    font-weight: 200;
+    font-size:0.8rem;
+    margin-left:1.5rem;
+}
